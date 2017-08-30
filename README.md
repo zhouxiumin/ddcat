@@ -4,6 +4,8 @@ ddcat是一个安卓看漫画应用，没有ios版本，写了一个React native
 
 ## 编译运行：
 > yarn
+> 
+> react-native link
 >
 > react-native run-ios
 
