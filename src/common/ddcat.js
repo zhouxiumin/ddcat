@@ -369,6 +369,9 @@ class DDCatContainer {
     };
 
 
+    // 以下代码暂时没用
+
+
     parseQueryString(search) {
         let json = {};
         search.split(";").forEach(function (pair) {
