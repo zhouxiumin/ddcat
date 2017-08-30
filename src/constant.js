@@ -1,0 +1,1 @@
+export const URL = 'http://sited.noear.org/';

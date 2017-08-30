@@ -1,0 +1,45 @@
+{
+	"name": "ddcat",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"ipad": "react-native run-ios --simulator 'iPad (5th generation)'",
+		"ios": "react-native run-ios",
+		"test": "jest"
+	},
+	"dependencies": {
+		"buffer": "^5.0.7",
+		"cheerio": "0.22.0",
+		"events": "^1.1.1",
+		"iconv-lite": "^0.4.18",
+		"immutability-helper": "^2.3.1",
+		"jquery": "^3.2.1",
+		"jquery-xpath": "^0.3.1",
+		"lodash": "^4.17.4",
+		"react": "16.0.0-alpha.12",
+		"react-native": "0.47.1",
+		"react-native-orientation": "^3.0.0",
+		"react-native-scrollable-tab-view": "^0.6.7",
+		"react-native-uuid": "^1.4.9",
+		"react-native-vector-icons": "^4.3.0",
+		"react-native-video": "^2.0.0",
+		"react-native-video-controls": "^1.4.0",
+		"react-redux": "^5.0.6",
+		"realm": "^1.10.3",
+		"redux": "^3.7.2",
+		"redux-logger": "^3.0.6",
+		"redux-thunk": "^2.2.0",
+		"stream": "^0.0.2",
+		"xmldom": "^0.1.27"
+	},
+	"devDependencies": {
+		"babel-jest": "20.0.3",
+		"babel-preset-react-native": "2.1.0",
+		"jest": "20.0.4",
+		"react-test-renderer": "16.0.0-alpha.12"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
