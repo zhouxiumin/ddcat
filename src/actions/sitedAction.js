@@ -73,7 +73,7 @@ export function loadSitedList(dispatch) {
         return AsyncStorage.getItem('selectSitedSource').then((data)=>{
             if (data) {
                 url = data;
-                return fetchOrFromCache(data, {}, 1);
+                return fetchOrFromCache(data, {headers:{'x-requested-with':'XMLHttpRequest'}}, 1);
             }else {
                 url = 'http://sited.ka94.com/api/';
                 return AsyncStorage.setItem('selectSitedSource','http://sited.ka94.com/api/')
@@ -84,7 +84,9 @@ export function loadSitedList(dispatch) {
         }).then((html) => {
             const set = [];
             if (url === 'http://sited.ka94.com/api/'){
-                let jo = require('../assets/json/sited.json');
+                // console.log(html);
+                // let jo = require('../assets/json/sited.json');
+                let jo = JSON.parse(html);
                 let sort_dl = jo['sort_dl'];
                 for(let i=0;i<sort_dl.length;i++){
                     let item = sort_dl[i];
