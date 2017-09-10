@@ -128,8 +128,6 @@ class Hots extends Component {
                 );
                 break;
             default:
-                console.log('dtype:');
-                console.log(dtype);
                 return (
                     <View/>
                 );
@@ -145,7 +143,8 @@ const styles = StyleSheet.create({
     },
     viewStyle: {
         flex:1,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        paddingBottom: 120
     },
     firstViewStyle: {
         flexDirection: 'column',
@@ -156,6 +155,7 @@ const styles = StyleSheet.create({
         marginTop: 32,
         justifyContent: 'flex-start',
         alignItems: 'center',
+        paddingBottom: 60
     },
     innerViewStyle: {
         width: screenW / 3,

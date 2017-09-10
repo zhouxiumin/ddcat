@@ -84,12 +84,9 @@ class Hots extends Component {
                                  </View>
                              )
                          }}
-
             />
         );
     }
-
-
 }
 
 const styles = StyleSheet.create({
